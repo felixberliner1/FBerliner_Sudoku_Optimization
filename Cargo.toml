@@ -1,0 +1,13 @@
+[workspace]
+
+members = [
+    "cnf_builder",
+    "structure",
+    "translation_to_SAT",
+]
+
+[workspace.dependencies]
+serde = { version = "1.0", features = [ "derive" ] }
+varisat = "0.2.2"
+toml = "0.8.14"
+rand = "0.8.4"
