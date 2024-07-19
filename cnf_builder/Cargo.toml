@@ -1,0 +1,17 @@
+[package]
+name = "cnf_builder"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+varisat = "0.2.2"
+structure = {path = "../structure"}
+serde = {workspace = true}
+rand = "0.8.4"
+
+[[bench]]
+name = "sudoku_bench"
+harness = false
+
+[dev-dependencies]
+criterion = "0.3"
